@@ -39,7 +39,7 @@
 	<bean id="viewMappings"  
         class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">  
         <property name="mappings">  
-            <value> /shopping.do=flowController </value>  
+            <value> /springpizza=flowController </value>  
         </property>  
          <property name="defaultHandler">  
             <bean class="org.springframework.web.servlet.mvc.UrlFilenameViewController" />  

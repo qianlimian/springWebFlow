@@ -7,6 +7,23 @@
 			<file>src/main/webapp/WEB-INF/flows/springpizza.xml</file>
 			<name><![CDATA[springpizza]]></name>
 			<beans-config><![CDATA[1:BeansModel|2:springWebFlow|3:src/main/resources/webflow-config.xml]]></beans-config>
+			<beans-config><![CDATA[1:BeansModel|2:springWebFlow|3:src/main/resources/springmvc.xml]]></beans-config>
+		</config>
+		<config>
+			<file>src/main/webapp/WEB-INF/flows/pizza/customer.xml</file>
+			<name><![CDATA[customer]]></name>
+			<beans-config><![CDATA[1:BeansModel|2:springWebFlow|3:src/main/resources/webflow-config.xml]]></beans-config>
+			<beans-config><![CDATA[1:BeansModel|2:springWebFlow|3:src/main/resources/springmvc.xml]]></beans-config>
+		</config>
+		<config>
+			<file>src/main/webapp/WEB-INF/flows/pizza/order.xml</file>
+			<name><![CDATA[order]]></name>
+			<beans-config><![CDATA[1:BeansModel|2:springWebFlow|3:src/main/resources/webflow-config.xml]]></beans-config>
+			<beans-config><![CDATA[1:BeansModel|2:springWebFlow|3:src/main/resources/springmvc.xml]]></beans-config>
+		</config>
+		<config>
+			<file>src/main/webapp/WEB-INF/flows/pizza/payment.xml</file>
+			<name><![CDATA[payment]]></name>
 		</config>
 	</configs>
 </webflow-project-description>
