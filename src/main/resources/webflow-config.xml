@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:webflow-config="http://www.springframework.org/schema/webflow-config"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+		http://www.springframework.org/schema/webflow-config http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.4.xsd">
+	<!-- flowExecutor -->
+	<webflow-config:flow-executor id="flowExecutor" flow-registry="flowRegistry"></webflow-config:flow-executor>
+	<!-- spring registry -->
+	<!-- 流程id = springpizza -->
+	<webflow-config:flow-registry id="flowRegistry" flow-builder-services="flowBuilderServices">
+		<webflow-config:flow-location path="/WEB-INF/flows/shopping.xml" id="shopping"></webflow-config:flow-location>
+	</webflow-config:flow-registry>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<webflow-config:flow-builder-services id="flowBuilderServices" view-factory-creator="mvcViewFactoryCreator"/>
+	
+	<bean id="mvcViewFactoryCreator" class="org.springframework.webflow.mvc.builder.MvcViewFactoryCreator">
+		<property name="viewResolvers" ref="viewResolver"></property>
+	</bean>
+
+</beans>
